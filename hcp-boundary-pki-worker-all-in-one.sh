@@ -69,6 +69,6 @@ systemctl daemon-reload
 systemctl enable hcp-boundary-pki-worker
 systemctl start hcp-boundary-pki-worker
 
-echo "If all commands exdcuted successfully, then you should find the Worker Auth Registration code below:"
+echo "If all commands executed successfully, then you should find the Worker Auth Registration code below:"
 
 grep 'Worker Auth Registration Request' /var/log/syslog | awk {'print $8'}
