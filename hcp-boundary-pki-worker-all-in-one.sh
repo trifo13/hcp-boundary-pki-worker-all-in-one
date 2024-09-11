@@ -71,4 +71,6 @@ systemctl start hcp-boundary-pki-worker
 
 echo "If all commands executed successfully, then you should find the Worker Auth Registration code below:"
 
-grep 'Worker Auth Registration Request' /var/log/syslog | awk {'print $8'}
+grep 'Worker Auth Registration Request' /var/log/syslog
+
+echo "Copy and paste it in HCP Boundary >> Workers >> New >> 3. Confirm the worker when they connect >> Register Worker.
